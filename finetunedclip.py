@@ -49,7 +49,7 @@ if __name__ == '__main__':
     processor = CLIPProcessor.from_pretrained("openai/clip-vit-base-patch32")
 
     # Load dataset
-    dataset = pd.read_excel("D:/Labeled Retinology Images.xlsx")
+    dataset = pd.read_excel("Labeled Retinology Images.xlsx")
     image_urls = dataset['ImageURL'].tolist()
     labels = [CLASS_TEXTS.index(label) for label in dataset['Label'].tolist()]
 
